@@ -1,0 +1,97 @@
+#total{
+    width:98%;
+    max-width:980px;
+    height:auto;
+    margin:auto;
+}
+#topo{
+    width:100%;
+    height:auto;
+    float: left;
+}
+#logo{
+    width:204px;
+    height:84px;
+    margin:18px auto;
+}
+#menu{
+    width: 100%;
+    height: 40px;
+    border-radius: 7px;
+    background-color: black;
+    text-align: center;
+    line-height: 40px
+}
+#menu a{
+    color: white;
+    margin: 0px 30px;
+    font-size:14px;
+}
+#menu a:hover{
+    text-decoration-color: cyan;
+}
+#banner{
+    width: 100%;
+    height: auto;
+    float:left;
+    margin: 5px auto;
+}
+#banner img{
+    width: 100%;
+}
+#anuncio{
+    width: 100%;
+    float: left;
+    text-align: center;
+    color:white;
+    background-color: black;
+    padding: 10px 0px;
+    text-transform: uppercase;
+    display: none;
+}
+/*MEDIA QUERY*/
+@media screen and (min-width:641px) and (max-width:768px) {
+    #anuncio{    
+      display: block;
+    }
+  }
+@media screen and (max-width:600px){
+    #menu a{
+      margin: 0 10px;
+    }  
+}
+@media screen and (max-width:392px){
+    #menu{
+      height: auto;
+    } 
+    #menu a{
+      display: block;
+      border-bottom: 1px solid #ccc;
+    } 
+    #banner{
+        display: none
+    }  
+    #conteudo, #coluna{
+        width: 100%
+    }
+}
+#rodape{
+    height:40px;
+    width: 100%;
+    color: white;
+    background-color:black;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 7px;
+    text-align: center;
+    line-height: 40px;
+    float: left;
+    margin-bottom: 2px;
+}
+#conteudo{
+    width: 60%;
+    float:left
+}
+#coluna{
+    width: 35%;
+    float: right
+}
